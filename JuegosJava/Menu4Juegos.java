@@ -1,3 +1,4 @@
+package JuegosJava;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
@@ -32,11 +33,15 @@ public class Menu4Juegos {
 
                 JOptionPane.showMessageDialog(null, " Has seleccionado Sudoku ",
                          "Sudoku", JOptionPane.INFORMATION_MESSAGE , Sicon1);
+                         sudoku sudoku = new sudoku();
+                         sudoku.play();
                 break;
             case 1:
                 // Lógica para el juego de Conecta 4
                 JOptionPane.showMessageDialog(null, " Has seleccionado Conecta 4 ",
                          "Conecta 4", JOptionPane.INFORMATION_MESSAGE , Cicon2);
+                         Conecta4 conecta4 = new Conecta4();
+                         Conecta4.partida();
                 break;
             case 2:
                 // Lógica para el juego de Ahorcado
@@ -47,58 +52,18 @@ public class Menu4Juegos {
                 // Lógica para el juego de Adivina el número
                 JOptionPane.showMessageDialog(null, " Has seleccionado Adivina el número ",
                          "Adivina el número", JOptionPane.INFORMATION_MESSAGE , ANicon4);
-                         adivinaElNumero();
+                         adivinaElNumero juego = new adivinaElNumero();
+                         juego.adivinaElNumero();
                 break;
             default:
                 JOptionPane.showMessageDialog(null, "No has seleccionado ninguna opción");
                 break;
+
              }
+
     }//metodo main
 
-        // Método para el juego "Adivina el número." El programa debe generar un número aleatorio entre 0 y 100.
-        // El jugador ingresa un número y el programa le informa si es mayor, menor o igual al número secreto.
-        // Mantener el conteo de intentos del jugador.
-        // Cuando el jugador adivine correctamente, mostrar el número de intentos que tomó.
-        // Incluir opción para reiniciar el juego.
-        // Implementar un sistema efectivo para comparar el número ingresado con el número objetivo.
-        // Controlar los límites del rango (0 a 100) en la entrada del usuario.
-        // Método para el juego "Adivina el número"
-        
-        public static void adivinaElNumero() {
-            int numSecreto = (int) (Math.random() * 101); // Generar número aleatorio entre 0 y 100
-            int intentos = 0 ;
-            int numUsuario = -1 ;
-            while (numUsuario != numSecreto) {
-                String respuesta = JOptionPane.showInputDialog(null, " Adivina el número entre 0 y 100 : ");
-                if (respuesta == null) {
-                    JOptionPane.showMessageDialog(null, " Juego cancelado ");
-                    return;
-                }
-                try {
-                    numUsuario = Integer.parseInt(respuesta);
-                    if (numUsuario < 0 || numUsuario > 100) {
-                        JOptionPane.showMessageDialog(null, "Por favor, introduce un número entre 0 y 100");
-                        continue;
-                    }
-                    intentos++;
-                    if (numUsuario < numSecreto) {
-                        JOptionPane.showMessageDialog(null, "El número es mayor");
-                    } else if (numUsuario > numSecreto) {
-                        JOptionPane.showMessageDialog(null, "El número es menor");
-                    } else {
-                        JOptionPane.showMessageDialog(null, "¡Felicidades! Has adivinado el número en " + intentos + " intentos.");
-                        int reiniciar = JOptionPane.showConfirmDialog(null, "¿Quieres jugar de nuevo?", "Reiniciar juego", JOptionPane.YES_NO_OPTION);
-                        if (reiniciar == JOptionPane.YES_OPTION) {
-                            adivinaElNumero(); // Reiniciar el juego
-                        } else {
-                            JOptionPane.showMessageDialog(null, "Gracias por jugar");
-                        }
-                    }
-                } catch (NumberFormatException e) {
-                    JOptionPane.showMessageDialog(null, "Por favor, introduce un número válido");
-                }
-            }
-        } //class4
+    
 } //class
 
 
