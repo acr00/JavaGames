@@ -2,10 +2,7 @@ package JuegosJava;
 import java.util.Scanner;
 
 public class Conecta4 {
-    
 
-    
-    // PASO 1: declaración de variables
     private static char jugador1 = 'X';
     private static char jugador2 = 'O';
     private static char[] jugadores = {jugador1, jugador2};
@@ -17,9 +14,6 @@ public class Conecta4 {
     private static Scanner sc = new Scanner(System.in);
     private static boolean juegoTerminado = false;
 
-
-
-    //PASO 2: métodos
     public static void partida() { 
         for (int f = 0; f < filas; f++) {
             for (int c = 0; c < columnas; c++) {
@@ -122,7 +116,7 @@ public class Conecta4 {
             if (verificarColumna(columna)) {
                 int fila = ponerFicha(columna, jugadores[jugadorActual]);
                 if (fila == -1) {
-                    System.out.println("No se puede colocar la ficha en esta columna. Intente de nuevo.");
+                    System.out.println("No se puede colocar la ficha en esta columna. Intentalo de nuevo.");
                 } else {
                     System.out.println(" ");
                     System.out.println(" ");
@@ -139,7 +133,7 @@ public class Conecta4 {
                     }
                 }
             } else {
-                System.out.println("Columna inválida. Intente de nuevo.");
+                System.out.println(" Columna inválida. Intentalo de nuevo.");
             }
         }
         reiniciarJuego();

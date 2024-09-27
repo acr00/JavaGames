@@ -47,6 +47,7 @@ public class Menu4Juegos {
                 // Lógica para el juego de Ahorcado
                 JOptionPane.showMessageDialog(null, " Has seleccionado Ahorcado ",
                          "Ahorcado", JOptionPane.INFORMATION_MESSAGE , Ahicon3);
+                         ahorcado.main(null);
                 break;
             case 3:
                 // Lógica para el juego de Adivina el número
