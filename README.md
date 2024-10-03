@@ -1,7 +1,7 @@
 # Menu de 4 juegos con Java
-Junto a Alejandra Sierra
+con Alejandra Sierra
 
-## INSTRUCCIONES
+## INSTRUCCIONES DE LOS JUEGOS:
 
 
 #### Sudoku:
