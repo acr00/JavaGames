@@ -1,7 +1,7 @@
 package JuegosJava;
 import javax.swing.JOptionPane;
 
-public class adivinaElNumero {
+public class AdivinaElNumero {
     public static void main(String[] args) {
         adivinaElNumero();
     }

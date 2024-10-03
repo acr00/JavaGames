@@ -33,28 +33,28 @@ public class Menu4Juegos {
 
                 JOptionPane.showMessageDialog(null, " Has seleccionado Sudoku ",
                          "Sudoku", JOptionPane.INFORMATION_MESSAGE , Sicon1);
-                         sudoku sudoku = new sudoku();
-                         sudoku.play();
+                         Sudoku sudoku = new Sudoku();
+                         Sudoku.play();
                 break;
             case 1:
                 // Lógica para el juego de Conecta 4
                 JOptionPane.showMessageDialog(null, " Has seleccionado Conecta 4 ",
                          "Conecta 4", JOptionPane.INFORMATION_MESSAGE , Cicon2);
                          Conecta4 conecta4 = new Conecta4();
-                         Conecta4.partida();
+                         Conecta4.main(null);
                 break;
             case 2:
                 // Lógica para el juego de Ahorcado
                 JOptionPane.showMessageDialog(null, " Has seleccionado Ahorcado ",
                          "Ahorcado", JOptionPane.INFORMATION_MESSAGE , Ahicon3);
-                         ahorcado.main(null);
+                         Ahorcado.main(null);
                 break;
             case 3:
                 // Lógica para el juego de Adivina el número
                 JOptionPane.showMessageDialog(null, " Has seleccionado Adivina el número ",
                          "Adivina el número", JOptionPane.INFORMATION_MESSAGE , ANicon4);
                          adivinaElNumero juego = new adivinaElNumero();
-                         juego.adivinaElNumero();
+                         juego.AdivinaElNumero();
                 break;
             default:
                 JOptionPane.showMessageDialog(null, "No has seleccionado ninguna opción");

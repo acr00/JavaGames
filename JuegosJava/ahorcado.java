@@ -1,7 +1,9 @@
 package JuegosJava;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
 
-public class ahorcado {
+public class Ahorcado {
 
     public static final String[] palabras = {
        " “agua”, “aire”, “arena”, “arroz”, “azul”, “banco”, “barco”, “boca”, “bolsa”, “bota”, “brazo”, “cabeza”, “caja”, “calor”, “campo”, “canto”, “casa”, “cielo”, “coche”, “cola”, “color”, “comida”, “copa”, “cosa”, “crema”, “cuadro”, “cuadro”, “cuerpo”, “dedo”, “diente”, “dinero”, “dolor”, “duda”, “edad”, “espejo”, “estrella”, “fuego”, “gente”, “goma”, “grito”, “hielo”, “hijo”, “hoja”, “hora”, “huevo”, “idea”, “juego”, “lago”, “lata”, “leche”, “lente”, “libro”, “luz”, “mano”, “mapa”, “marco”, “mesa”, “miedo”, “mundo”, “nieve”, “nube”, “ojo”, “oro”, “palo”, “papa”, “pasto”, “pato”, “pelo”, “piedra”, “piso”, “plato”, “pluma”, “pueblo”, “puerta”, “queso”, “rata”, “rayo”, “reina”, “rey”, “rio”, “roca”, “rosa”, “sabor”, “sala”, “salto”, “sangre”, “silla”, “sol”, “sombra”, “sonido”, “taza”, “tela”, “tierra”, “tinta”, “toro”, “tren”, “vaso”, “vela”, “viento”, “vino”, “voz”."

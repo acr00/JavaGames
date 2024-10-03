@@ -1,12 +1,12 @@
 package JuegosJava;
 import java.util.Scanner;
 
-public class sudoku {
+public class Sudoku {
     private static final int SIZE = 9;
     private static final int EMPTY = 0;
     private int[][] tablero = new int[SIZE][SIZE];
 
-    public sudoku() {
+    public Sudoku() {
 
         inicializarTablero();
     }
