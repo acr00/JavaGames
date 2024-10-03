@@ -6,6 +6,8 @@ con Alejandra Sierra
 
 #### Sudoku:
 
+![sudoku-adult-level-1-015](https://github.com/user-attachments/assets/55a525cb-7920-4df8-8f22-7ff9b2e1154d)
+
 Una cuadrícula de 9x9 con algunos números predefinidos. Debes completar la cuadrícula utilizando los números del 1 al 9, asegurándote de no repetir ningún número en la misma fila, columna o cuadrado. Para añadir un número, selecciona la fila y la columna. No puedes modificar los números predefinidos, pero sí puedes cambiar los que tú hayas ingresado. Si decides rendirte o reiniciar, se te mostrará la solución.
 
 
