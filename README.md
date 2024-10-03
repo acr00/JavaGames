@@ -1,4 +1,4 @@
-# ProyectoGames
+# Menu de 4 juegos con Java
 Junto a Alejandra Sierra
 
 ## INSTRUCCIONES
